@@ -12,8 +12,6 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.gms.common.api.Status;
@@ -30,9 +28,10 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-// TODO: Add user marker to the map
-// TODO: Add target selection
-
+/**
+ * Sends a Toast notification when the user is within 200 meters from a location that they specify.
+ * @author David Wiedel & Michael Bishoff
+ */
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback, LocationListener {
 
     // Map Objects
